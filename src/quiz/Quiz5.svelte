@@ -64,7 +64,7 @@
   <div class="actions">
     <div class="inner">
       <button class="act-button" on:click={() => answerQuestionAndGoTo('Quiz4')}>Back</button>
-      <button disabled={responseNum === 0} class="{responseNum > 0 ? 'act-button' : 'act-button disabled'}" on:click={() => answerQuestionAndGoTo('Score')}>Next question</button>
+      <button disabled={responseNum === 0} class="{responseNum > 0 ? 'act-button' : 'act-button disabled'}" on:click={() => answerQuestionAndGoTo('Score')}>Finish Quiz</button>
     </div>
   </div>
 <style>
@@ -102,13 +102,14 @@
   position: absolute;
   left: 10%;
   right: 10%;
-  bottom: 10%;
+  bottom: 17%;
 }
 .inner {
   display: flex;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+  width: 60%;
 }
 
 .act-button {

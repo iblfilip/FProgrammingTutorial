@@ -25,7 +25,7 @@
 {/if}
 <div class="intro">Your score is {score}/12.5</div>
 <div class="centered">
-  <button on:click={() => goTo('Welcome')} class="act-button">Return to main menu</button>
+  <button on:click={() => goTo('Welcome')} class="act-button">Return home</button>
 </div>
 <style>
 #uppernavbardiv {

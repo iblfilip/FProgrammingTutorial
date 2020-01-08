@@ -31,12 +31,6 @@
 		5: 3
 	}
 
-	const steps = { Tutorial1, Tutorial2, Welcome };
-
-    function changeStep(event) {
-        step = steps['Tutorial1'];
-    }
-
 		function resetQuiz() {
 			score = 0;
 			answers = {
@@ -48,12 +42,16 @@
 				}
 		}
 
+		function changeStep(newStep) {
+			step = newStep
+		}
+
 		function goTo(event) {
 			console.log('go  to ', event.detail.path)
 			if(event.detail.path === 'Welcome') {
 				resetQuiz()
 			}
-			step = event.detail.path
+			changeStep(event.detail.path)
 		}
 
 		function answered(event) {
@@ -111,6 +109,15 @@
 			<Score on:goTo={goTo} score={score}></Score>
 		{/if}
 	</div>
+	<div class="menu">
+		<div on:click={() => changeStep('Welcome')} class="{step === 'Welcome' ? 'item selected' : 'item'}">Home</div>
+		<div on:click={() => changeStep('Tutorial1')} class="{step === 'Tutorial1' ? 'item selected' : 'item'}">Introduction</div>
+		<div on:click={() => changeStep('Tutorial2')} class="{step === 'Tutorial2' ? 'item selected' : 'item'}">Conditional</div>
+		<div on:click={() => changeStep('Tutorial3')} class="{step === 'Tutorial3' ? 'item selected' : 'item'}">Loops</div>
+		<div on:click={() => changeStep('Tutorial4')} class="{step === 'Tutorial4' ? 'item selected' : 'item'}">Anonymous functions</div>
+		<div on:click={() => changeStep('Tutorial5')} class="{step === 'Tutorial5' ? 'item selected' : 'item'}">Pattern matching</div>
+		<div on:click={() => changeStep('Quiz1')} class="{step === 'Quiz1' || step === 'Quiz2' || step === 'Quiz3' || step === 'Quiz4' || step === 'Quiz5' || step === 'Score' ? 'item selected' : 'item'}">Quiz</div>
+	</div>
 </main>
 
 <style>
@@ -127,12 +134,40 @@
 		}
 	}
 	.stage {
-    position: absolute;
-    top: 10%;
-    left: 20%;
-    width: 60%;
-    height: 80%;
-    background-color: rgb(48,49,54);
+		margin-left: auto;
+		margin-right: auto;
+		width: 60%;
+		height: 650px;
+		background-color: rgb(48,49,54);
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		width:60%;
+		background-color: rgb(48,49,54);
+		padding: 20px 15px 10px 15px;
+		margin-top: 5px;
+	}
+
+	.item {
+		padding: 5px 5px 20px 5px;
+		margin: 3px;
+		color: white;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.item:hover {
+		text-decoration: underline;
+	}
+
+	.selected {
+		text-decoration: underline;
 	}
 
 	p {

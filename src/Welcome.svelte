@@ -68,7 +68,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 35%;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 .act-button {

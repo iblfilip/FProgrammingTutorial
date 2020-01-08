@@ -97,7 +97,7 @@
     overflow: auto;
     padding: 10px 20px 10px 20px;
     bottom: 100px;
-    height: 93%;
+    height: 575px;
   }
 
   .actions {

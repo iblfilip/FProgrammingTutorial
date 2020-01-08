@@ -67,7 +67,7 @@
   <hr>
 
   <div class="inner">
-    <button class="act-button" on:click={() => goTo('Welcome')}>Menu</button>
+    <button class="act-button" on:click={() => goTo('Welcome')}>Home</button>
     <button class="act-button" on:click={() => goTo('Tutorial2')}>Next</button>
   </div>
 </div>
@@ -133,7 +133,7 @@
     overflow: auto;
     padding: 10px 20px 10px 20px;
     bottom: 100px;
-    height: 93%;
+    height: 575px;
   }
 
   .actions {
