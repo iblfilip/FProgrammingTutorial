@@ -16,7 +16,7 @@
   </div>
   <div class="intro" style="font-weight: bold;font-family: Helvetica">Welcome to our course of functional programming, start by reading the tutorial and if you have the courage, try your luck in our quiz.</div>
   <div class="ext" style="font-weight: bold;font-family: Helvetica">You should bear in mind that, we have selected OCaml as the language of this application, without any particular reason. </div>
-    <div class="ext" style="font-weight: bold;font-family: Helvetica">The quiz consists of 6 questions, 2.0 points for a correct answer, -2.5 for incorrect one. </div>
+    <div class="ext" style="font-weight: bold;font-family: Helvetica">The quiz consists of 6 questions, 2.0 points for a correct answer, -0.5 for incorrect one. </div>
     <div class="inner">
       <button class="act-button" on:click={() => goTo('Tutorial1')}>Start tutorial</button>
       <button class="act-button" on:click={() => goTo('Quiz1')}>Start quiz</button>
