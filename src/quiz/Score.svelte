@@ -19,7 +19,7 @@
     </div>
   </div>
 {#if score > 8}
-<div class="congratulation">Congratulations!</div>
+<div class="congratulation">Congratulations! Your score is 'Prizeworthy'</div>
 {:else}
 <div class="congratulation">You looser!</div>
 {/if}

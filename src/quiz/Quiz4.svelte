@@ -53,7 +53,7 @@
     </div>
   </div>
   <div class="question-block">
-    <div class="quest">Question n. 4</div>
+        <div class="quest" style="font-family: 'Helvetica'; font-weight: bold">Question 4 </div>
     <div class="sent">Which of following is correct to create an anonymous function?</div>
   </div>
   <div class="options">

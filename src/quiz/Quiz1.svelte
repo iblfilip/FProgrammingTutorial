@@ -35,14 +35,22 @@
       option1 = 'selected'
       option2 = ''
       option3 = ''
+      option4 = ''
     } else if(num === 2) {
       option2 = 'selected'
       option1 = ''
       option3 = ''
+      option4 = ''
     } else if(num === 3) {
       option3 = 'selected'
       option1 = ''
       option2 = ''
+      option4 = ''
+    } else if(num === 4){
+        option3 = ''
+        option1 = ''
+        option2 = ''
+        option4 = 'selected'
     }
     responseNum = num;
   }
@@ -54,8 +62,8 @@
     </div>
   </div>
   <div class="question-block">
-    <div class="quest">Question n. 1</div>
-    <div class="sent">In the functional programming, which statement is correct?</div>
+    <div class="quest" style="font-family: 'Helvetica'; font-weight: bold">Question 1</div>
+    <div class="sent">In the realm of functional programming, which statement is correct?</div>
   </div>
   <div class="options">
     <div on:click={() => selectOption(1)} class="{ option1 ? 'option selected' : 'option'}">Both List and var x are mutable</div>
@@ -124,6 +132,8 @@
   margin: 10px;
   font-size: 16px;
 }
+
+
 
 .disabled {
   background-color: #c7a172;

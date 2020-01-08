@@ -53,7 +53,7 @@
     </div>
   </div>
   <div class="question-block">
-    <div class="quest">Question n. 5</div>
+        <div class="quest" style="font-family: 'Helvetica'; font-weight: bold">Question 5 </div>
     <div class="sent">What does failwith mean in <b>OCaml</b>?</div>
   </div>
   <div class="options">

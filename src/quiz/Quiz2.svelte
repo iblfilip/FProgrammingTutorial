@@ -53,7 +53,7 @@
     </div>
   </div>
   <div class="question-block">
-    <div class="quest">Question n. 2</div>
+    <div class="quest" style="font-family: 'Helvetica'; font-weight: bold">Question 2 </div>
     <div class="sent">Which statement is legal in <b>OCaml</b>?</div>
   </div>
   <div class="options">

@@ -14,7 +14,9 @@
       <div id="upperheading"> Functional programming</div>
     </div>
   </div>
-  <div class="intro">Welcome to  the course of functional programming, start by tutorial and then test your new skills in our quiz. Good luck!</div>
+  <div class="intro" style="font-weight: bold;font-family: Helvetica">Welcome to our course of functional programming, start by reading the tutorial and if you have the courage, try your luck in our quiz.</div>
+  <div class="ext" style="font-weight: bold;font-family: Helvetica">You should bear in mind that, we have selected OCaml as the language of this application, without any particular reason. </div>
+    <div class="ext" style="font-weight: bold;font-family: Helvetica">The quiz consists of 6 questions, 2.0 points for a correct answer, -2.5 for incorrect one. </div>
     <div class="inner">
       <button class="act-button" on:click={() => goTo('Tutorial1')}>Start tutorial</button>
       <button class="act-button" on:click={() => goTo('Quiz1')}>Start quiz</button>
@@ -48,6 +50,15 @@
   font-size: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.ext {
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
 }

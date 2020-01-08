@@ -53,7 +53,7 @@
     </div>
   </div>
   <div class="question-block">
-    <div class="quest">Question n. 3</div>
+        <div class="quest" style="font-family: 'Helvetica'; font-weight: bold">Question 3 </div>
     <div class="sent">Can we implement a while loop in <b>OCaml</b>?</div>
   </div>
   <div class="options">

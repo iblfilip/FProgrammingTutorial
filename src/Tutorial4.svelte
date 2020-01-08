@@ -1,6 +1,6 @@
 <div id="uppernavbardiv">
   <div class="headings">
-    <div id="upperheading">Anonimous functions</div>
+    <div id="upperheading">Anonymous functions</div>
   </div>
 </div>
 <div class="content">
